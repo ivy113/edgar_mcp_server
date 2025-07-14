@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edgar_mcp_server"
+version = "0.1.0"
+description = "MCP Server for accessing SEC EDGAR filings data"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "edgartools>=2.0.0",
+    "mcp>=0.1.0",
+]
+
+[project.scripts]
+edgar_mcp_server = "edgar_mcp_server.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

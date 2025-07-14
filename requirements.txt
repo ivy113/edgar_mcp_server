@@ -1,0 +1,2 @@
+edgartools>=2.0.0
+mcp
